@@ -1,7 +1,11 @@
 function animate() {
     ctx3.clearRect(0, 0, canvas.width, canvas.height);
+    ctx2.drawImage(backgroundLand, 0, 0, canvas.width, canvas.height);
+    handleParticles();
     pawn.draw();
     pawn.update();
+    //handleObstacles();
+    ctx4.drawImage(backgroundGrass, 0, 0, canvas.width, canvas.height);
     requestAnimationFrame(animate);
 }
 

@@ -13,7 +13,7 @@ class Pawn {
     }
     
     update(){
-        //console.log('update');
+        //console.log('update'); TESTING
         if (keys[38]){ //Up
             if(this.moving === false){
                 this.y -= grid;
@@ -44,7 +44,7 @@ class Pawn {
         ctx1.fillRect(this.x, this.y, this.width, this.height);
     }
     jump() {
-        //console.log('jump');
+        //console.log('jump'); TESTING
     }
 }
 

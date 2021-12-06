@@ -1,5 +1,4 @@
 // Creating variables of all canvas (1-5) and assigning values to them 
-
 const canvas = document.getElementById('canvas1');
 const ctx1 = canvas.getContext('2d');
 canvas.width = 600;
@@ -26,6 +25,7 @@ canvas5.width = 600;
 canvas5.height = 600;
 
 //global variables
+// Game Logic Vars
 const grid = 80;
 let keys = [];
 let score = 0;
@@ -33,10 +33,19 @@ let collisionsCount = 0;
 let frame = 0;
 let gameSpeed = 1;
 
-
+// Animation Vars
 const particlesArray = [];
 const maxParticles = 300;
 const ripplesArray = [];
+
+// Obstacle Vars
 const carsArray = [];
 const logsArray = [];
 
+// Image Var Land Enviroment 
+const backgroundLand = new Image();
+backgroundLand.src = 'BackgroundLand.PNG';
+
+//Image Var Grass Patch
+const backgroundGrass = new Image();
+backgroundGrass.src = 'BackgroundGrass.PNG';
