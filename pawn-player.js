@@ -38,10 +38,11 @@ class Pawn {
                 this.moving = true;
             }
         }
+        if (this.y < 0) scored();
     }
     draw(){
         ctx3.fillStyle = 'green';
-        ctx1.fillRect(this.x, this.y, this.width, this.height);
+        ctx3.fillRect(this.x, this.y, this.width, this.height);
     }
     jump() {
         //console.log('jump'); TESTING

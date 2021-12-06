@@ -24,9 +24,27 @@ class Particle {
             this.radius -= 0.14;
         }
     }
+    drawRipple(){
+        ctx1.strokeStyle = 'rgba(255,255,255,' + this.opacity + ')';
+        ctx1.beginPath();
+        ctx1.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx1.stroke();
+        ctx1.closePath();
+    }
+    ripple(){
+        if (this.radius < 50){
+            this.radius += 0.7;
+            this.x -= 0.03;
+            this.y -= 0.03;
+        }
+        if (this.opacity > 0){
+            this.opacity -= 0.02;
+        }
+    }
 }
 
 function handleParticles(){
+    // Dust Particles
     for(let i = 0; i < particlesArray.length; i++){
         particlesArray[i].update();
         particlesArray[i].draw();
@@ -42,3 +60,24 @@ function handleParticles(){
         }
     }
 }
+   
+function handleRipples(){
+     // Water Ripples
+     for(let i = 0; i < ripplesArray.length; i++){
+        ripplesArray[i].ripple();
+        ripplesArray[i].drawRipple();
+    }
+    if(ripplesArray.length > 20){
+        for (let i = 0; i < 5; i++){
+            ripplesArray.pop();
+        }
+    }
+    if (((keys[37] || keys[38] || keys[39] || keys[40])) && pawn.y < 250 && pawn.y > 100) {
+        for (let i = 0; i < 20; i++){
+            ripplesArray.unshift(new Particle(pawn.x, pawn.y))
+        }
+    }
+}
+
+
+  
