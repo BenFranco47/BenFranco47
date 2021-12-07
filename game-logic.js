@@ -32,6 +32,7 @@ let score = 0;
 let collisionsCount = 0;
 let frame = 0;
 let gameSpeed = 1;
+let safe = false;
 
 // Animation Vars
 const particlesArray = [];
@@ -42,10 +43,31 @@ const ripplesArray = [];
 const carsArray = [];
 const logsArray = [];
 
-// Image Var Land Enviroment 
+//Land Enviroment Image
 const backgroundLand = new Image();
 backgroundLand.src = 'BackgroundLand.PNG';
 
-//Image Var Grass Patch
+//Grass Patch Image
 const backgroundGrass = new Image();
 backgroundGrass.src = 'BackgroundGrass.PNG';
+
+//Collision Image
+const collisions = new Image();
+collisions.src = 'Collisions.PNG';
+
+//Turtle Image
+const turtle = new Image();
+turtle.src = 'turtles.PNG';
+
+//Log Image
+const log = new Image();
+log.src = 'Logs.PNG'
+
+//Car Image
+const car = new Image();
+car.src = 'Cars.PNG';
+let numberOfCars = 3;
+
+//Frog Image
+const froggerSprite = new Image();
+froggerSprite.src = 'FroggerSprite.PNG';

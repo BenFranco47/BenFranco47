@@ -1,5 +1,9 @@
 /*External Sources: Photopea, Canva */
-
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px green;
+    text-align: center;
+}
 .wrapper {
     border: 5px solid black;
     top: 50%;
@@ -17,4 +21,8 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+body {
+    background-color: gray;
 }
