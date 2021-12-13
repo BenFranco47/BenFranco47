@@ -38,7 +38,7 @@ window.addEventListener('keydown', function(e) {
 window.addEventListener('keyup', function(e){
     delete keys[e.keyCode];
     pawn.moving = false;
-    // This gives the illusion tht the player is jumping 
+    // This gives the illusion that the player is jumping 
     pawn.frameX = 0;
 });
 
