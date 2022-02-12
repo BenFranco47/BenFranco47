@@ -45,29 +45,29 @@ const logsArray = [];
 
 //Land Enviroment Image
 const backgroundLand = new Image();
-backgroundLand.src = 'BackgroundLand.PNG';
+backgroundLand.src = 'Assets/BackgroundLand.PNG';
 
 //Grass Patch Image
 const backgroundGrass = new Image();
-backgroundGrass.src = 'BackgroundGrass.PNG';
+backgroundGrass.src = 'Assets/BackgroundGrass.PNG';
 
 //Collision Image
 const collisions = new Image();
-collisions.src = 'Collisions.PNG';
+collisions.src = 'Assets/Collisions.PNG';
 
 //Turtle Image
 const turtle = new Image();
-turtle.src = 'turtles.PNG';
+turtle.src = 'Assets/turtles.PNG';
 
 //Log Image
 const log = new Image();
-log.src = 'Logs.PNG'
+log.src = 'Assets/Logs.PNG'
 
 //Car Image
 const car = new Image();
-car.src = 'Cars.PNG';
+car.src = 'Assets/Cars.PNG';
 let numberOfCars = 3;
 
 //Frog Image
 const froggerSprite = new Image();
-froggerSprite.src = 'FroggerSprite.PNG';
+froggerSprite.src = 'Assets/FroggerSprite.PNG';
